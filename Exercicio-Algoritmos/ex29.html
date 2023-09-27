@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <script>
+
+            var nome = prompt("Digite seu nome.");
+            var anos = parseFloat(prompt("Digite quantos anos você trabalha na empresa."));
+            var salario = parseFloat(prompt("Digite quanto você recebe."));
+            var salarioTotal = 0;
+            var reajusteSalarial5 = (3/100) * salario;
+            var reajusteSalarial6 = (12.5/100) * salario;
+            var reajusteSalarial7 = (20/100) * salario;
+
+
+            if (anos < 4){
+                salarioTotal = salario + reajusteSalarial5;
+                alert("Seu salário passou de " + salario + " para " + salarioTotal + " com um aumento de " + reajusteSalarial5);
+            }else if(anos > 3 && anos < 11){
+                salarioTotal = salario + reajusteSalarial6;
+                alert("Seu salário passou de " + salario + " para " + salarioTotal + " com um aumento de " + reajusteSalarial6);
+            }else{
+                salarioTotal = salario + reajusteSalarial7;
+                alert("Seu salário passou de " + salario + " para " + salarioTotal + " com um aumento de " + reajusteSalarial7);
+            }
+
+        </script>
+    </body>
+</html>

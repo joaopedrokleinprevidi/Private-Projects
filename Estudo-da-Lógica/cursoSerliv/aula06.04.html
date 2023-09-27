@@ -1,0 +1,57 @@
+<html>
+    <body>
+        
+        <div id="output"></div>
+
+        <button id="caneta" onclick="comprarC()"> Comprar Caneta </button>
+        <button id="lapis" onclick="comprarL()"> Comprar Lápis </button>
+
+        <script>
+
+            var produtos = [{'nome': 'caneta', 'preço': 2, 'estoque': 30}, {'nome': 'lapis', 'preço': 1, 'estoque': 30}];
+
+            var div = document.querySelector('#output');
+            var msg = '';
+            var p = parseInt(prompt("Deseja o produto 1 ou 2?"))
+            var q = 0;
+            var preco = 0;
+
+            if(p == 1){
+                msg = "Produto: " + produtos[0].nome + "<br>" + "Preço: " + produtos[0].preço + "<br>" + "Estoque: " + produtos[0].estoque;
+                
+            }else {
+                msg = "Produto: " + produtos[1].nome + "<br>" + "Preço: " + produtos[1].preço + "<br>" + "Estoque: " + produtos[1].estoque;
+                
+            };
+
+            function comprarC(){
+                q = parseInt(prompt("Quantas canetas deseja comprar? "))
+            
+                produtos[0].estoque -= q;
+                preco = produtos[0].preço * q;
+                    if(q > 1){
+                         alert("O valor de " + q + " canetas fica: " + preco)
+                    }else {
+                         alert("O valor de " + q + " caneta fica: " + preco)
+                        }
+                div.innerHTML = msg = "Produto: " + produtos[0].nome + "<br>" + "Preço: " + produtos[0].preço + "<br>" + "Estoque: " + produtos[0].estoque;
+            
+            };
+
+            function comprarL(){
+                q = parseInt(prompt("Quantos lápis deseja comprar? "))
+                produtos[1].estoque -= q;
+                preco = produtos[1].preço * q;
+                alert("O valor de " + q + " lápis fica: " + preco)
+                div.innerHTML = msg = "Produto: " + produtos[1].nome + "<br>" + "Preço: " + produtos[1].preço + "<br>" + "Estoque: " + produtos[1].estoque;
+                
+            
+            };
+
+            div.innerHTML = msg;
+
+
+
+        </script>
+    </body>
+</html>

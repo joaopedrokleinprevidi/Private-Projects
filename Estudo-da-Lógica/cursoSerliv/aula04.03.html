@@ -1,0 +1,34 @@
+ <html>
+    <body>
+
+        <button id="btn" onclick="mostrarAreaDiv()"> DIV </button>
+        <button id =btn2" onclick="mostrarAreaAlert()"> ALERT </button>
+        <div id="show"></div>
+        <script>
+
+            
+
+            function mostrarAreaDiv(){
+
+                var l = parseFloat(prompt("Primeiro número que representa um lado do retangulo"));
+
+                var a = parseFloat(prompt("Segundo número que representa um lado do retangulo"));
+
+              var mostrar = document.querySelector('#show')
+              mostrar.innerHTML = l * a;
+
+            };
+
+            function mostrarAreaAlert(){
+
+                var l = parseFloat(prompt("Primeiro número que representa um lado do retangulo"));
+
+                var a = parseFloat(prompt("Segundo número que representa um lado do retangulo"));
+
+                alert(l*a)
+
+};
+
+        </script>
+    </body>
+ </html>

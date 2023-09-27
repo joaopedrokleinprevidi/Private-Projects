@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <script>
+
+            var altura = parseFloat(prompt("[CALCULO IMC] Digite sua altura."));
+            var peso = parseFloat(prompt("[CALCULO IMC] Digite seu peso."));
+            var calculoAltura = (altura ** altura);
+            var calculoIMC = peso / calculoAltura;
+            console.log(calculoIMC);
+
+            if (calculoIMC < 18.6){
+                console.log("Abaixo do Peso");
+            }else if (calculoIMC > 18.5 && calculoIMC < 26){
+                console.log("Peso ideal");
+            }else if (calculoIMC > 25 && calculoIMC < 31){
+                console.log("Sobrepeso");
+            }else if (calculoIMC > 30 && calculoIMC < 41){
+                console.log("Obesidade");
+            }else if (calculoIMC > 40){
+                console.log("Obesidade mórbida");
+            }
+
+
+        </script>
+    </body>
+</html>

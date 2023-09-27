@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+
+            var valorCasa = parseFloat(prompt("[BANCO] Digite o valor da casa que você deseja comprar."));
+            var salarioRecebido = parseFloat(prompt("Digite o salário que você recebe."));
+            var anosPrestacao = parseFloat(prompt("Digite em quantos anos você pretende pagar por este imóvel."));
+            var mesPrestacao = anosPrestacao * 12;
+            var trintaPorcento = (30/100) * salarioRecebido;
+
+            var tempoAquisicao = valorCasa / mesPrestacao; 
+            if (tempoAquisicao > trintaPorcento){
+                alert("Perdão, mas as prestações passam de 30% do seu salário, e não podemos realizar este empréstimo")
+            };
+
+
+        </script>
+    </body>
+</html>

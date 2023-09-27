@@ -1,0 +1,59 @@
+<html>
+    <body>
+        <script>
+
+            function fichaPaciente(nome,idade,peso,altura,problema){
+                this.nome = prompt("Digite seu nome completo");
+                //   while(nome == undefined){
+                    //       prompt("Por favor, digite seu nome completo"); }
+                this.idade = prompt("Digite sua idade");
+                //   while(idade == undefined){
+                    //    prompt("Por favor, informe corretamente a sua idade!"); }
+                this.peso = prompt("Digite seu peso");
+                //  while(peso == undefined){
+                    //  prompt("Por favor, informe corretamente o seu peso!"); }
+
+                this.altura = prompt("Digite sua altura");
+                //  while(altura == undefined){
+                    //   prompt("Por favor, digite corretamente a sua altura!"); }
+
+                this.problema = prompt("Se o seu problema for fisico digite 1, se for mental digite 2.");
+                //  while(problema == undefined){
+                    //   prompt("Por favor, selecione corretamente em que estado se encontra!"); }
+                
+            }
+            
+
+
+                console.log("O nome do paciente é: "+nome);
+                console.log("A idade do paciente é: "+idade);
+                console.log("O peso do paciente é: "+peso);
+                console.log("A altura do paciente é: "+altura);
+                console.log("O paciente se encontra com um problema: "+problema);
+                console.log("Aguarde um minutinho, já te encaminharemos para o setor responsável!");
+
+                function Medico1(nome1,tipo){
+                this.nome = nome1; 
+                this.tipo = tipo;
+                if(problema == tipo){
+                alert("O Médico Joao já irá lhe atender!");
+               }
+            }
+
+            Medico1 = new Medico1('Joao','1')
+            
+
+            function Medico2(nome2,tipo){
+                this.nome = nome2;
+                this.tipo = tipo;
+                if(problema == tipo){
+                    alert("A Médica Jovana já ira lhe atender!")
+                }
+            }
+            
+            Medico2 = new Medico2('Jovana','2');
+           
+
+        </script>
+    </body>
+</html>

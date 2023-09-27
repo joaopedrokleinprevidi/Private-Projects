@@ -1,0 +1,17 @@
+<html>
+<body>
+    <script>
+        var anoIdade = prompt("Digite o ano em que você nasceu");
+
+        while(anoIdade >= 2023){
+            alert('Por favor informe seu ano de nascimento corretamente.');
+            anoIdade = prompt("Digite o ano em que você nasceu");
+        }
+
+        var anoAtual = prompt("Digite o ano atual");
+
+        var idade = anoAtual - anoIdade;
+        alert("Você tem " +idade +" anos de idade");
+    </script>
+</body>
+</html>

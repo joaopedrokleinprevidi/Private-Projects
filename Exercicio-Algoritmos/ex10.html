@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <script>
+
+            var l = parseFloat(prompt("Digite a largura da parede"));
+            var a = parseFloat(prompt("Digite a altura da parede"));
+
+            var area = l * a
+            var m2 = 0;
+
+            for (var c = 1; c <= area;c = c+2 ){
+                m2++;
+            }
+
+
+            alert(`
+Largura ${l} x Altura ${a} da uma área de = ${area} m.
+Vão ser necessários ${m2} litros de tinta para pintar uma área de ${area} m.`);
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <script>
+
+            var salario = parseFloat(prompt("Digite o salário que você recebe."));
+            var genero = prompt("Digite seu genero [H/M]");
+            var anos = parseFloat(prompt("Quantos anos você trabalha na empresa?"));
+
+            var m15 = (5/100) * salario;
+            var m20 = (12/100) * salario;
+            var m21 = (23/100) * salario;
+
+            var hMenos20 = (3/100) * salario;
+            var h30 = (13/100) * salario;
+            var h31 = (25/100) * salario;
+
+            if(genero == "H"){
+                if(anos < 20){
+                    salario += hMenos20;
+                }else if(anos > 20 && anos < 31){
+                    salario += h30;
+                }else if(anos > 30){
+                    salario += h31;
+                };
+            console.log(salario);
+            }else{
+                if(anos < 16){
+                    salario += m15;
+                }else if(anos > 15 && anos << 21){
+                    salario += m20;
+                }else if(anos > 20){
+                    salario += m21;
+                };
+            console.log(salario);
+            };
+
+        </script>
+    </body>
+</html>

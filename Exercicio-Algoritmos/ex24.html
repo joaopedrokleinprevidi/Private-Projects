@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <script>
+
+            var km = parseInt(prompt("[RODOVIÁRIA] Quantos KM você deseja percorrer?"))
+            var km1 = 0.50;
+            var km2 = 0.45;
+            var preco = 0;
+
+
+            if(km <= 200){
+                preco = km * km1;
+                console.log("Você ira percorrer " + km + " KM dando um total de " + preco +" R$");
+            }else{
+                preco = km * km2;
+                console.log("Você ira percorrer " + km + " KM dando um total de " + preco +" R$");
+            };
+
+    /*        if(km > 200){
+                for(var i = 0; i <= km; i++){
+                    preco = preco + km2;
+                    console.log(preco)
+                };
+            console.log("Você ira percorrer " + km + " KM dando um total de " + preco +" R$1");
+            }else{
+                for(var i = 0; i <= km; i++){
+                    preco = preco + km1;
+                    console.log(preco)
+                };
+            console.log("Você ira percorrer " + km + " KM dando um total de " + preco +" R$1");
+            };
+        
+  */          
+
+
+        </script>
+    </body>
+</html>

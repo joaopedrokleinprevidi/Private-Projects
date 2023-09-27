@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <button onclick="mostrarTabuada()">Criar Tabuada</button>
+        <button onclick="limparTabuada()">Limpar Tabuada</button>
+
+        <div id="output"></div>
+        <script>
+            
+            var output = document.querySelector('#output')
+            var mensagem = "";
+
+            function mostrarTabuada(){
+                //perguntar o numero para usuario
+                var n = parseInt(prompt("Digite um número"));
+
+                limparTabuada();
+                
+                var c = 0;
+                //fazer loop da tabuada
+                while (c < 1001){
+                    mensagem += (n + " x " + c + " = " + (n*c) + '<br>');
+                    c++;
+                };
+
+                output.innerHTML = mensagem;
+            };
+
+           function limparTabuada(){
+            mensagem = mensagem.innerHTML = "";
+            output.innerHTML = "";
+           };
+        </script>
+    </body>
+</html>

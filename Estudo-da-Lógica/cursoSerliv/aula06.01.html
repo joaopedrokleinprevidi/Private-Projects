@@ -1,0 +1,20 @@
+ <html>
+    <body>
+
+        <div id="output"></div>
+        <script>
+            var produtos = new Array();
+            produtos.push("panela", "fogao", "lençol", "tijolo");
+            
+            
+     var msg = "";
+
+            for (var c = 0; c < produtos.length; c++){
+                msg = msg + "Produto " + (c+1) + " = " + produtos[c] + "<br>"; 
+            };
+
+            document.querySelector("#output").innerHTML = msg;
+      
+        </script>
+    </body>
+ </html>

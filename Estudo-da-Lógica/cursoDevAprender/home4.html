@@ -1,0 +1,61 @@
+<html>
+    <body>
+        <script>
+
+            const carro = {
+                marcaDoCarro : 'GOL',
+                corDoCarro : 'AZUL',
+                motorDoCarro : {
+                    potencia: 100 + 'cavalos',
+                    velocidadePorSegundo: 30 + 'p/s',
+                    velocidadeMaxima : 150 + 'km/h'
+                },
+                tipoDeGol: 'BOLINHA',
+                deuRuim : function (){
+                    console.log("O pneu furou!");
+                }
+            }
+
+
+            carro.tipoDeGol = 'quadrado';
+            console.log(carro.tipoDeGol);
+            carro.deuRuim();
+
+                        //JavaScript aula 34 - Factory Functions
+                        // para criar vários objetos diferentes de uma forma muito mais prática!
+
+            function chamarCarro(marcaDoCarro, corDoCarro, motorDoCarro){
+                return {
+                    marcaDoCarro,
+                    corDoCarro,
+                    motorDoCarro,
+                    deuRuim(){
+                        console.log("O pneu furou!");
+                    }
+                };
+
+            }
+
+            const fiatao = chamarCarro("Fiat", "Verde", 100)
+            console.log(fiatao);
+            console.log(fiatao.deuRuim);
+
+                    //JavaScript aula 35 - Constructor Functions
+                    // para criar vários objetos diferentes de uma forma muito mais prática!
+
+            function Zologico(quantidadeDeAnimais,animais,localizacao,precoEntrada){
+                this.quantidadeDeAnimais = quantidadeDeAnimais,
+                this.animais = animais,
+                this.localizacao = localizacao,
+                this.precoEntrada = precoEntrada,
+                this.saida = function(){
+                    console.log("Saindo do zológico...")
+                }
+            }
+
+            const Zologicou = new Zologico(500, "Macaco, Rinoceronte, Jaguar, Girafa, Tigre, Pombo", "São Paulo", 75);
+            console.log(Zologicou);
+            
+        </script>
+    </body>
+</html>

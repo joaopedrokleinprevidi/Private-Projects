@@ -1,0 +1,48 @@
+<html>
+    <body>
+
+        <button onclick="soma()"> + </button>
+        <button onclick="menos()"> - </button>
+        <button onclick="divisao()"> / </button>
+        <button onclick="multiplicacao()"> * </button>
+        <button onclick="limparC()"> Limpar Calculadora </button>
+
+        <div id="output"></div>
+        <script>
+
+            var n1 = parseFloat(prompt("[CALCULADORA] Digite um número e siga para a próxima etapa!"));
+            var n2 = 0;
+            output.innerHTML = n1
+
+            function soma(){
+                n2 = parseFloat(prompt("Digite outro número!"));
+                output.innerHTML = n1 + n2;
+                n1 = n1 + n2;
+            };
+           
+            function menos(){
+                n2 = parseFloat(prompt("Digite outro número!"));
+                output.innerHTML = n1 - n2;
+                n1 = n1 - n2;
+            };
+
+            function divisao(){
+                n2 = parseFloat(prompt("Digite outro número!"));
+                output.innerHTML = n1 / n2;
+                n1 = n1 / n2;
+            };
+
+            function multiplicacao(){
+                n2 = parseFloat(prompt("Digite outro número!"));
+                output.innerHTML = n1 * n2;
+                n1 = n1 * n2;
+            };
+
+            function limparC(){
+                output.innerHTML = "";
+                n1 = parseFloat(prompt("[CALCULADORA] Digite um número e siga para a próxima etapa!"));
+            }
+
+        </script>
+    </body>
+</html>

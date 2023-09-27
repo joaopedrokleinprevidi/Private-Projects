@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <script>
+
+            var ano = parseInt(prompt("Digite o ano de seu nascimento!"));
+            var anoAtual = 2023;
+            var calculoIdade = anoAtual - ano;
+            
+            if (calculoIdade == 18)
+                alert("Você está no ano do alistamento! Boa sorte!");
+            if(calculoIdade != 18){
+                if (calculoIdade < 18){
+                    var faltam = 18 - calculoIdade;
+                    if (faltam == 1){
+                        alert("Falta apenas um ano para o seu alistamento, te vejo no ano que vem!");
+                    }else
+                    alert("Faltam " + faltam + " anos para você se alistar!");
+                }
+                if (calculoIdade > 18){
+                    var passaram = calculoIdade - 18;
+                    if (passaram == 1){
+                        alert("Já se passou " + passaram + " ano desde que você se alistou! Boa soldado!")
+                    }else
+                    alert("Já se passaram " + passaram + " anos do seu alistamento.");
+                }
+            };
+
+        </script>
+    </body>
+</html>

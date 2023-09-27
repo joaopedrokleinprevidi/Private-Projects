@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <head>
+        <style>
+        *{
+            text-align: center;
+            font-style: italic;
+        }
+        </style>
+        </head>
+        <h1>Lógica de Programação</h1>
+        <br>
+
+        <form method="get" id="form" action="">
+
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" title="Preencha o campo corretamente" required name=nome>
+    <input type="submit" id="submit" name="Enviar" onclick="submit()">
+
+    </form>
+        <script>
+            
+            function submit(){
+                var nome = document.querySelector("nome")
+                nome.innerHTML = nome;
+                alert("Seu nome é: " + nome)
+            };
+        </script>
+    </body>
+</html>

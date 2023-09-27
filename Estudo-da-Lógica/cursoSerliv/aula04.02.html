@@ -1,0 +1,21 @@
+ <html>
+    <body>
+
+        <button id="btn" onclick="mostrarArea()"> Mostrar Área </button>
+        <div id="show"></div>
+        <script>
+
+            var l = parseFloat(prompt("Digite a largura"));
+
+            var a = parseFloat(prompt("Digite a altura"));
+
+            function mostrarArea(){
+
+              var mostrar = document.querySelector('#show')
+              mostrar.innerHTML = l * a;
+
+            };
+
+        </script>
+    </body>
+ </html>

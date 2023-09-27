@@ -1,0 +1,22 @@
+<html>
+    <body>
+
+        <div id="output"></div>
+        <script>
+
+            var div = document.querySelector("#output");
+            var arr = new Array(1, 2, 3, 5, 2);
+            var arrP = 0;
+
+            for(var c = 0; c < arr.length; c++){
+                if((arr[c] % 2) == 0){
+                    arrP = arrP + arr[c];
+                    div.innerHTML = arrP;
+                    
+                }
+            };
+
+            alert(arrP);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+    <body>
+
+        <button id="btn" onclick="escrever()"> Calculo </button>
+        <div id="output"></div>
+        
+        <script>
+
+            var l1 = parseFloat(prompt("Digite o primeiro lado"));
+            var l2 = parseFloat(prompt("Digite o segundo lado"));
+
+            testar(l1,l2);
+
+            var area = l1 * l2;
+            alert(area);
+
+            function escrever(l1,l2){
+            var div = document.querySelector('#output');
+               div.innerHTML = area;
+            };
+
+
+             
+            function testar(){
+                if( isNaN(l1) || isNaN(l2) || l1 == undefined || l2 == undefined) {      
+                    try {
+                        area;
+                    }catch(e){
+                       alert(e) ;
+                    }
+                    }
+                
+
+
+            };
+
+        </script>
+    </body>
+</html>

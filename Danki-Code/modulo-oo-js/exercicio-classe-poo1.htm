@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <script>
+
+            class Carro{
+                constructor(marca,cor,tipo){
+                    this.marca = marca;
+                    this.cor = cor;
+                    this.tipo = tipo;
+                }
+                info(){
+                    console.log("Seja bem vindo a Oficina do Zé!");
+                    console.log("A marca do carro é: " +this.marca);
+                    console.log("A cor do carro é: "+this.cor);
+                    console.log("O carro ele é: "+this.tipo);
+
+                }
+            }
+            var c1 = new Carro('Fiat','Preto','1.0');
+
+            c1.info();
+
+        </script>
+    </body>
+</html>

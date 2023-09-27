@@ -1,0 +1,41 @@
+<html>
+    <body>
+        <script>
+
+            var carro = prompt(
+                `Qual carro deseja alugar?
+                 1 para Carro POPULAR: 90$ por dia
+                 2 para Carro de LUXO: 150$ por dia`);
+            var tempo = parseFloat(prompt("Quantos dias de aluguel?"));
+            var totTempo = 0;
+            var km = parseFloat(prompt("Quantos km foram/serão percorridos?"));
+            var totKM = 0;
+            var totPreco = 0;
+
+            if (carro == 1){
+                totTempo = tempo * 90;
+                if (km > 100){
+                totKM = km * 0.10;
+                }else {
+                    totKM = km * 0.20;
+                }
+                totPreco = totTempo + totKM;
+            }else{
+                totTempo = tempo * 150;
+                if(km > 200){
+                    totKM = km * 0.30;
+                }else{
+                    totKM = km * 0.25
+                }
+                totPreco = totTempo + totKM;
+            };
+
+            console.log("Carro alugado: " + carro);
+            console.log("Tempo alugado: " + tempo + " dias || Valor do aluguel: " + totTempo);
+            console.log("KM'S percorridos: " + km + " || Valor dos KM'S rodados: " + totKM);
+            console.log("Valor total(KM'S + ALUGUEL): " + totPreco);
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <script>
+
+            var nome = prompt("Digite seu nome.");
+            var sexo = prompt("Digite seu sexo. [H/M]");
+            var valor = parseFloat(prompt("Digite o valor de suas compras."));
+            var descontoH = (5 / 100) * valor;
+            var descontoM = (13 / 100) * valor;
+            var resultado = 0;
+
+            if (sexo === "H"){
+                 resultado = valor - descontoH;
+                 alert(
+                       `Você gastou um total de: ${valor} 
+                        Hoje estamos com 5% de desconto!
+                        Com o desconto, suas compras ficam por: ${resultado}
+                        Obrigado e volte sempre!`)
+            };
+            if (sexo === "M"){
+                resultado = valor - descontoM;
+                alert(`Você gastou um total de: ${valor} 
+                       Hoje estamos com 13% de desconto!
+                       Com o desconto, suas compras ficam por: ${resultado}
+                       Feliz Dia das Mulheres!
+                       Obrigado e volte sempre!`)
+            };
+          </script>
+    </body>
+</html>

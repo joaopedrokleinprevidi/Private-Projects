@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+
+            var r = parseFloat(prompt("Digite os km/h do seu carro."));
+            var v = 80;
+
+            if (r >= v){
+                var t = 0;
+                for(var c = 80; c >= r; c++){
+                    var t = t + 1;
+                }
+               var multa = t * 5;
+
+               alert(`ATENÇÃO! Você recebeu uma multa de ${multa} R$ por ter ultrapassado o limite de ${v}km/h`);
+
+            }
+
+        </script>
+    </body>
+</html>

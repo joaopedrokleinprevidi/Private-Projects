@@ -1,0 +1,70 @@
+<html>
+    <body>
+
+        <button onclick="iniciarCalculo('+')"> + </button>
+        <button onclick="iniciarCalculo('-')"> - </button>
+        <button onclick="iniciarCalculo('/')"> / </button>
+        <button onclick="iniciarCalculo('*')"> * </button>
+        <button onclick="limparC()"> Limpar Calculadora </button>
+
+        <div id="output"></div>
+        <script>
+
+            var n1 = parseFloat(prompt("[CALCULADORA] Digite um número e siga para a próxima etapa!"));
+ 
+
+            escreve(n1);
+
+            function escreve(mensagem){
+                var output = document.querySelector('#output');
+                output.innerHTML = mensagem;
+            }
+
+            function iniciarCalculo(simbolo){
+                var n1 = document.querySelector('#output').textContent;
+                n1 = parseFloat(n1);
+                var n2 = parseFloat(prompt("[CALCULADORA] Digite outro número!"));
+
+                var msg = calcular(simbolo, n1, n2)
+
+                escreve(msg);
+
+
+            };
+
+            function calcular(simbolo, n1, n2){
+                var numeroCalculado = null;
+                switch (simbolo){
+                    case '+':
+                        numeroCalculado = n1 + n2
+                        //n1 = n1 + n2
+                        break;
+                    case '-':
+                        numeroCalculado = n1 - n2;
+                        //n1 = n1 - n2
+                        break;
+                    case '/': 
+                        numeroCalculado = n1 / n2;
+                        //n1 = n1 / n2;
+                        break;
+                    case '*': 
+                        numeroCalculado = n1 * n2;
+                        //n1 = n1 * n2
+                    default:
+                        n2 = parseFloat(prompt("Digite outro número!"));
+                        break;
+
+                }
+                    return numeroCalculado;                
+            };
+
+            function limparC(){
+                escreve(null);
+                n1 = parseFloat(prompt("[CALCULADORA] Digite um número e siga para a próxima etapa!"));
+                escreve(msg);
+                iniciarCalculo(n1, n2);
+            }
+
+        </script>
+    </body>
+</html>

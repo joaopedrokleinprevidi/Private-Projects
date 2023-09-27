@@ -1,0 +1,36 @@
+* {margin:0px; padding:0px;}
+
+body {
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+main {
+    background-color:brown;
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 70px;
+    height: 45px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    display: block;
+}
+
+button:hover {
+        font-size: 25px;
+        color: rgb(255, 0, 0);
+        text-shadow: 1px 1px 1px 0px white;
+        width: 80px;
+        height: 55px;
+        transition: 0.3s linear;
+}

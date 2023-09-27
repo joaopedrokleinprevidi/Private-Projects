@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <script>
+            var n1 = parseInt(prompt("[JOGADOR 1] Digite um número."))
+            var n2 = parseInt(prompt("[JOGADOR 2] Digite um número."))
+
+
+            var sorteio = parseInt(Math.random() * 2)
+           
+            
+            if (n1 == n2){
+                alert("O jogo empatou!")            
+            }else if (sorteio == 0){
+                alert("Os dados giraram e cairam em 0! O menor número digitado vence!")
+                if(n1 < n2){
+                    alert("JOGADOR 1 VENCEU! UTILIZANDO O NÚMERO " + n1)
+                }else if (n2 < n1)
+                alert("JOGADOR 2 VENCEU! UTILIZANDO O NÚMERO " + n2)
+              
+            }else if (sorteio == 1){
+                alert("Os dados giraram e cairam em 1! O maior número digitado vence!")
+                if (n1 > n2){
+                    alert("JOGADOR 1 VENCEU! UTILIZANDO O NÚMERO " + n1)
+                }else if (n2 > n1){
+                    alert("JOGADOR 2 VENCEU! UTILIZANDO O NÚMERO " + n2)
+                }
+            }
+        </script>
+    </body>
+</html>

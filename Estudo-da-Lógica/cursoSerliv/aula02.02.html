@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <script>
+            //pedir para o usuario digitar um número
+            var n1 = parseInt(prompt("Digite o primeiro número"))
+
+            //pedir para o usuario digitar o segundo número
+            var n2 = parseInt(prompt("Digite o segundo número"))
+
+            //pedir qual sinal o usuário quer fazer a operação
+
+            var sinal = prompt("Digite o sinal aritmético! [+ ou / ou * ou -]")
+
+            //mostrar a soma
+            if (sinal == "+"){
+                var soma = n1 + n2
+                alert("A soma é: " + soma)
+            }else if (sinal == "/"){
+                var soma = n1 / n2
+                alert("A divisão é: " + soma)
+            }else if (sinal == "*"){
+                var soma = n1 * n2
+                alert("A multiplicação é: " + soma)
+             }else {
+                var soma = n1 - n2
+                alert("A subtração é: " + soma)
+             }
+
+             
+        </script>
+    </body>
+</html>

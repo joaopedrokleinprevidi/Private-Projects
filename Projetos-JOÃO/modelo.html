@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>YT | 01</title>
+
+    <style>
+        body{
+            background-color: blue;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        };
+
+        .box-nav{
+            background-color: gold;
+            padding: 5px;
+            border-radius: 15px;
+        };
+
+        .box{
+            background: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 50%;
+            left: 50px;
+            transform: translate(-50%,-50%);
+            padding: 15px;
+            border-radius: 15px;
+            color: white;
+        };
+
+        input{
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            font-size: 15px;
+            width: 50%;
+        };
+
+        button{
+            padding: 10px;
+            border: none;
+            outline: none;
+            width: 50%;
+            background-color: slateblue;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+        };
+
+        button:hover{
+            background-color: cornflowerblue; 
+        };
+    </style>
+
+</head>
+<body>
+
+    <div class="box-nav">
+        <h1>EXERCÍCIO #01</h1>
+        <h2>Prof. Youtube</h2>
+    </div>
+
+    <div class="box">
+        <p>Leia o valor de um input e mostre em um alert.</p>
+        <input type="text" id="num" placeholder="Digite um valor...">
+        <br><br>
+        <button onclick="go()">Enviar</button>
+    </div>
+
+<script>
+
+    function go(){
+        var valueInput = getElementById('num').value 
+        alert(valueInput);
+    }
+ 
+
+</script>
+</body>
+</html>

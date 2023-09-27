@@ -1,0 +1,33 @@
+<html>
+    <body>
+
+        <div id="output"></div>
+        <script>
+
+            var caneta = new Object();
+            caneta.nome = "caneta";
+            caneta.preco = 2.2;
+            caneta.estoque = 30;
+
+            caneta.comprar = function(qtd){
+                if(!qtd) {
+                    qtd = 1;
+                }
+                console.log("comprou caneta");
+                this.estoque = this.estoque - qtd;
+                console.log(this.estoque);
+            }
+
+            var msg = '';
+
+            msg += 'nome: ' + caneta.nome + "<br>"
+            msg += 'preço: ' + caneta.preco + "<br>"
+            msg += 'quantidade: ' + caneta.estoque + "<br>"
+
+            var pitbull = document.querySelector('#output');
+            pitbull.innerHTML = msg;
+
+
+        </script>
+    </body>
+</html>

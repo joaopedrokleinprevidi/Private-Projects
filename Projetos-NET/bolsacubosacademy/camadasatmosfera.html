@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var altitude = parseFloat(prompt("Digite a quantos quilômetros do solo a nave está."));
+
+        function solucao(altitude) {
+            if (altitude > 0 && altitude < 21){
+                alert("A nave se encontra atualmente na troposfera: essa camada se estende até 20 km do solo.");
+            }else if (altitude > 20 && altitude < 51){
+                alert("A nave se encontra atualmente na estratosfera: essa camada se estende chega a 50 km do solo.");
+            }else if (altitude > 50 && altitude < 81){
+                alert("A nave se encontra atualmente na mesosfera: essa camada se estende chega a 80 km do solo.");
+            }else if (altitude > 80 && altitude < 451){
+                alert("A nave se encontra atualmente na termosfera: essa camada se estende chega a 450 km do solo.");
+            }else{
+                alert("A nave se encontra atualmente na exosfera: a ultima camada da atmosfera, superior a 900 km.");
+            };
+
+        }
+        solucao(altitude);
+
+    </script>
+</body>
+</html>

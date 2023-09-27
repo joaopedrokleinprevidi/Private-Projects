@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+
+            var n1 = parseFloat(prompt("Digite sua primeira nota."));
+            var n2 = parseFloat(prompt("Digite sua segunda nota, para calcularmos sua média."));
+            var media = (n1 + n2) / 2;
+
+            if(media <= 4.9){
+                alert("Você foi reprovado com a média " + media)
+            }else if(media <= 6.9){
+                alert("Você está de recuperação com a média de " + media)
+            }else{
+                alert("Você está aprovado com a média de " + media)
+            };
+
+        </script>
+    </body>
+</html>
