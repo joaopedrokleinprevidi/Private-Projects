@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Titulo';
+    src: url('files/UnifrakturMaguntia/UnifrakturMaguntia-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --fonte0: 'Titulo', cursive, monospace, sans-serif;
+    --cor1: #13F1F2;
+    --cor2: #14BEFC;
+    --cor3: #1E7BE6;
+    --cor4: #1443FC;
+    --cor5: #2113F2;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(0, 200, 255);
+}
+
+menu > #div_icon > #icon_header {
+    width: 140px;
+    height: 140px;
+}
+
+menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header > menu > span > .textmenu {
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: var(--fonte0);
+    color: var(--cor3);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+
+    padding-top: 20px;
+}
+
+#tit_menu {
+    font-size: 2.5em;
+}
