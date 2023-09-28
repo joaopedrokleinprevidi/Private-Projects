@@ -49,14 +49,9 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 15px;
-    height: 125px;
-
-    background: linear-gradient(#00bbff, white); 
+    width: 100vw;
 }
+
 
 menu > #div_icon > #icon_header {
     width: 140px;
@@ -64,10 +59,13 @@ menu > #div_icon > #icon_header {
 }
 
 menu {
+    padding: 15px;
+    height: 125px;
 
+    background: linear-gradient(#00bbff, white); 
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
@@ -85,6 +83,41 @@ header > menu > span > .textmenu {
     font-size: 2.5em;
 }
 
+header > nav {
+    background-color: #e4fffd;
+
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+
+.linkmenu {
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.466);
+    background-color: #fcfbfb;
+    color:#1443FC;
+    
+    padding: 4px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.linkmenu:hover{
+    text-decoration: underline #1443FC;
+    color:var(--cor2);
+    background-color: #dbfffc83;
+    padding: 6px;
+    border-radius: 8px;
+    
+    transition: 0.2s;
+}
+
+
 main {
     background-color: #e4fffd;
     min-width: 80vw;
@@ -95,7 +128,7 @@ main {
     margin: auto;
 }
 
-main > #div-tit{
+#div-tit{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,7 +139,7 @@ main > #div-tit > #principal-tit {
     padding: 15px;
 }
 
-main > #div-tit > .tit-main {
+.tit-main {
     font-family: var(--fonte1);
     color:#0099ff;
     text-indent: 40px;
