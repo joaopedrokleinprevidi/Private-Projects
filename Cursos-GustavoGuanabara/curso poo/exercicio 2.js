@@ -23,6 +23,22 @@ class Person {
     }
 }
 
-var person1 = new Person('pedro');
+class Dev extends Person {
+    constructor(nome, codeLanguage){
+        super(nome)
+        this ._codeLanguage = codeLanguage;
+    }
 
+    code() {
+        return `${this._nome} está codando em ${this._codeLanguage}`;
+    }
+}
+
+var person1 = new Person('pedro');
 console.log(person1);
+
+console.log('------------------------')
+
+var dev1 = new Dev('João', 'JavaScript')
+console.log(dev1);
+console.log(dev1.code())
