@@ -12,15 +12,6 @@ class Lutador {
         this.definirCategoria();
     }
 
-/* 
-peso mosca 53kg
-peso pena 71kg
-peso medio 84kg
-peso pesado 120kg
-else super peso pesado
-*/
-
-
     definirCategoria ( ) {
         if ( this._peso <= 53 ) {
             this._categoria = "Peso Mosca"
@@ -50,13 +41,48 @@ else super peso pesado
 
         `)
     }
+
+    ganharLuta () {
+        return this._vitorias = this._vitorias + 1;
+    }
+
+    perderLuta () {
+        return this._derrotas = this._derrotas + 1;
+    }
+
+    empatarLuta() {
+        return this._empates = this._empates + 1;
+    }
+
+
 }
 
-    const l = new Lutador('QuebraOsso', 'brasileiro', 20, 1.85, 120, 14, 2, 3);
+    const l1 = new Lutador('QuebraOsso', 'brasileiro', 20, 1.85, 120, 14, 2, 3);
+    const l2 = new Lutador('Osvaldo', 'Chines', 18, 1.67, 125, 12, 5, 6);
+    const l3 = new Lutador('Robertinho', 'Europeu', 32, 1.76, 95, 7, 1, 0);
+    const l4 = new Lutador('Geraldão', 'Brasileiro', 18, 1.93, 95, 10, 0, 3);
+    const l5 = new Lutador('Rodrigo', 'Japones', 22, 1.82, 60, 6, 3, 2);
+    const l6 = new Lutador('Perereko', 'Gaucho', 21, 1.84, 60, 12, 4, 2);
+
+    function n ( ) {
+    var aleatorio = parseInt(Math.random() * 6);
+    return aleatorio
+}
+
+    var array = [l1, l2, l3, l4, l5, l6];
+
+    class Luta {
+
+    }
+
+    for (var i = 0; i <= 10; i++){
+        if( n() == 0 ){
+           
+            
+        }
+    }
 
 
-    console.log(l)
-    console.log('----------------------------------')
-    console.log(l.apresentar());
+
 
 
