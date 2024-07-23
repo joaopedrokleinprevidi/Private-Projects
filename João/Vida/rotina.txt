@@ -1,0 +1,21 @@
+acordar - 07h
+trampo -08h
+12h intervalo
+trampo 13h
+fim trampo 17h   -total trampo 08h
+
+pause 2h - banho e louça 
+if(dia de calistenia) {fazer calistenia} else {jogar no tempo livre, matutar no banho}
+
+19h inicio estudo - 1hr de ingles
+20h alinhamento com supervisor + estudo geral/saas - 1hr 
+21h fim dos estudos - total 2hr
+???21:30h + 30m estudo e -30m jogos???
+
+3 hrs livres
+2 horas pro game 1 hora pra serie
+
+00h - dormir
+
+
+diario: total 10h de trampo { 8h e pouco no trampo, o resto ingles + estudo geral/saas }

@@ -1,0 +1,13 @@
+- Tornar cabeçalho acompanhando o scroll
+
+- Ajeitar estruturação de inputs e labels (Deixá-los centralizados e alinhados)
+ { E também aonde ficam os erros }
+Tem que criar um erroContainer diferente para o container-acess-data-signup 
+Pois os outros container de personal e address data estão usando grid. E aquele de access usa flexbox. 
+Então ele buga qnd coloco o errocontainer que é de grid..
+
+Ou na real, eu coloquei flex-direction: row no container de dados de acesso ..
+Ai o erro tá saindo em linha, fica mt grande o container e quebra o estilo
+
+
+- Colocar fonte em todos os lugares possíveis. hihi

@@ -1,0 +1,153 @@
+------ Animations:
+
+https://geracaocriativa.com/conteudos/desenvolvimento/codigo/36-17-animacoes-css-a-nao-perder-1parte 
+Aqui possui uma animação bota para troca de tema entre sol e lua.
+
+Buscar uma animação para input inválido.
+Talvez um de hover também para botão de comprar??
+
+
+
+
+----- Ideias:
+
+-- Analytics na parte de administração do proprietário para ter métricas relacionadas a seus produtos. 
+Exemplo: Quais produtos mais vendidos, quais produtos mais os usuários deixam de comprar... etc!
+
+!-- Sessão de Dúvidas no topo do header e um Sobre Nós.  
+
+!-- Cupons promocionais. 
+
+
+
+
+
+------ Style:
+
+--- Estilos Gerais:
+
+-- Opção 1: Sol e Lua (Possibilidade: 0%)
+Um sol para o tema claro no canto superior esquerdo do site. No tema claro o site será dentro de uma floresta.
+Ao clicar no sol, irá para o tema escuro. O sol é substituído por uma lua, e o site irá ficar dentro de um espaço com estrelas.
+
+-- Opção 2: Clean (Possibilidade: 50%)
+Um site mais clean, focado em simplicidade. Com fundo branco e cores de texto que destacam. Direcionando o usuário ao que ele busca, seus produtos. 
+
+-- Opção 3: Clean Florest (Possibilidade: 50%)
+Um site mais clean, focado em simplicidade. Com fundo branco e cores de texto que destacam. Direcionando o usuário ao que ele busca, seus produtos. 
+Porém o usuário se encontra dentro de um ambiente de floresta, algo que ficará no corpo da página e deve ser leve e com pouca opacidade. Não atrapalhando a concentração do usuário ou chamando muito a sua atenção. Deve ser algo natural.
+Podem ser: Algumas plantas nos cantos da página, como também pode ter uma árvore juntamente de algumas plantas. 
+
+
+--- Estilo no Logo:
+
+-- Opção 1: Clean (Possibilidade: 50%)
+Algo mais Clean, apenas realçando o nome e o logo da marca.
+
+-- Opção 2: Fitas (Possibilidade: 70%)
+Abaixo do nome da Marca, conterá fitas. Expressando a identidade da marca.
+
+
+--- Estilo nos Produtos:
+
+-- Opção 1: Orixás (Possibilidade: 5%)
+No fundo dos produtos, terá a imagem ou algo relacionado ao orixá da camiseta a ser vendida. 
+
+-- Opção 2: Fundo branco e sem bordas (Possibilidade: 60%)
+
+-- Opção 3: Fundo branco e bordas verdes (Possibilidade: 40%)
+Um fundo dos produtos branco, para realçar o produto. E uma borda verde, realçando mais ainda o produto.
+
+
+
+
+----- Figma / Estilos
+
+--- Cores:
+
+-- Verdes
+
+*Todos tons foram retirados da folha no logo da loja
+
+Tom 1 - Verde bem escuro: #1b300d
+
+Tom 2 - Verde escuro: #374e0b
+
+Tom 3 - Verde escuro: #43540f
+
+Tom 5 - Verde um pouco mais claro: #5a7813
+
+Tom 6 - Verde um pouco mais claro(sombreamento): #668213
+
+-- Amarelos
+
+*Todos tons foram retirados da coroa no logo da loja
+
+Tom 1 - Amarelo avermelhado: #c99a45
+
+Tom 2 - Amarelo forte: #da960d
+
+Tom 3 - Amarelo forte: #e5a206
+
+Tom 4 - Amarelo: #f1c338
+
+Tom 5 - Amarelo claro: #f2d563
+
+Tom 6 - Amarelo claro: #decd5d
+
+Tom 7 - Amarelo bem claro(sombreamento): #ffeebd 
+
+-- Azuis
+
+*Tons tirados do logo e de publicações da loja
+
+Tom 1 - Azul escuro do logo: #4d6a92
+
+Tom 2 - Azul claro do logo(sombreamento): #7d92a6
+
+Tom 3 - Azul forte Iemanja: #295877
+
+Tom 4 - Azul esverdeado Mar: #31b3ce
+
+Tom 5 - Azul muito forte mar: #2e4d6d
+
+Tom 6 - Azul mar: #348db8
+
+
+
+
+
+
+
+
+
+----- Segurança
+
+0- Buscar entender se é possível alguem conseguir visualizar o código pela internet (tanto o backend quanto o frontend)
+
+1- Usar váriaveis de ambiente que não são subidas ao GitHub para guardar qualquer tipo de dado sensível.
+Exemplo: Dados do FirebaseConfig, e da Chave de Acesso do Firebase, e do Criptografador do Bcrypt.
+
+
+2- Criptografar todas as senhas enviadas ao banco de dados.
+
+
+-- Para o painel de ADM:
+
+Possibilidade: Gerar um script para criar rotas e senhas doidas. 
+Aonde apenas a Daiane terá acesso a rota maluca, e a senha maluca. (Ver da possibilidade e como implementar isso)
+
+Criar uma rota bem diferente. Aonde para acessar ao painel é necessário uma senha.
+Para tomar decisões terá que reutilizar a senha também.
+
+Decisões disponíveis:
+
+- Postar um produto. (Definir preço fixo, e preço promocional(que será opcional) e imagem para todos dispositivos)
+- Postar uma promoção no banner principal. (Definir preço, definir imagem para todos os tipos de dispostivios, definir uma descrição?)
+- Excluir um produto. (O produto irá para a lixeira, aonde o proprietário pode resgatar o produto, em até 30 dias. Depois disso ele é apagado completamente)
+- Alterar alguma informação de um produto. (Alterar preço, definir preço promocional, definir como fora de estoque, alterar imagens, etc)
+- Criar categoria de produtos nova (Podendo inserir nome da categoria)
+
+Essas são algumas das possíveis funcionalidades. Pensar na possibilidade de implementar outras funcionalidades úteis. 
+
+Será feito com DOM, e POO. 

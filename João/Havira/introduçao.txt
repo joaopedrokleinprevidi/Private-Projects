@@ -1,0 +1,49 @@
+temos ux na equipe
+front back
+senior pleno
+temos requisitos
+nao temos testes
+
+
+contratual
+
+criterio CNAE
+contratar contador pra abrir ME
+
+EGL trabalha pro governo
+
+
+
+ELIEZER
+CADU
+IGOR
+
+
+horario de 8 horas diarias - horario flexivel - eu gerencio meu horario
+entregas por sprint - serviço por demanda, eu entregando oque é requisitado, está tudo certo
+
+equipe interna 8 +
+
+salario entre 3.000 e 3.500
+
+tela nova vamos subir
+onemap
+sit - cidax
+
+cidax são varios modulos, separados por funcionalidades
+
+stack: maplibre, mapGL
+
+homologação
+
+havira é uma houlding
+
+front temos 4 pessoas
+
+chackra ui, react puro, redux saga pra req, router dom , typescript(enumns), next.js (render server side, pading router, web router), tailwind, 
+shape file geojson
+
+azure para sprints
+
+pages >> components
+são componentes específicos daquela página

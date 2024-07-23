@@ -1,0 +1,129 @@
+IMPORTANTISSIMO:: ESTUDAR single-tenant e multi-tenant terraform radoop
+para entender como a aplicação irá escalar
+
+
+
+Responsabilidades:
+
+João: Fazer sprints, gestão, codigo
+Brayan: Revisar sprints, ajudar na gestão, codificar, ajudar a decidir quem entra ou sai do app (Aprovar ou dar toques finais nas sprints do back, discutir sobre implementações ou coisas do tipo. Para ter duas opniões e consequentemente duas cabeças trabalhando para um melhor resultado. Código, e ajudar a decidir quem entra ou sai do projeto.)
+
+lideres anonimos: ajudar em decisões de infra do app, em criar sprints, direção do código... ajudar na revisão de prs... 
+
+Devs: ser autonomo, escolher tasks que consiga realizar na sprint, e realiza-las, fazer pr, e esperar ser aprvoado, e fazer mais task.  
+
+
+Stack:
+
+   _backend
+
+	nestjs 
+	zod
+	typescript
+	firebase authentication (ver a escalabilidade disso)
+	postgresql + prisma (ver a escalabilidade disso)
+	tdd + jest
+        REDIS (BACK CACHE)
+
+   _frontend
+
+	nextjs
+	typescript
+	react
+	zustand
+	react hook form + zod
+	shadcn + tailwind
+	ky
+        CDN 
+
+
+Notion: 
+- deixar bem separado por tipo de coisa, ex: infra, codigo, utilities, etc
+- explicação sobre oque é o projeto
+- explicação das funcionalidades (bem detalhadamente, DE TODAS)
+- a política de produtividade (-3h por semana, tá fora) ...esperar um pouco p fzr esse
+- design code do projeto (instruir todos a ter o formatonsave com eslint/prettier, a estruturação de pastas que usaremos no back e front, e por ai vai)
+- um readme ensinando como ter acesso a plataforma de sprints do projeto (gitlab, azure????)
+- links uteis ( swagger doc da api, contato dos devs )
+
+Sprint: 
+
+- Aonde ficará as TASKS, bem detalhadamente.
+- A sprint é feita em um intervalo de semana.
+- O projeto deve ter o prazo de 6 meses a 1 ano.
+- Cada dev com acesso a plataforma de sprint pode selecionar uma tarefa que esteja ao seu nível e realizá-la.
+- Back e front cada um tem sua própria sprint.
+- PR deve ser aprovado por líderes do back/front.
+
+
+
+1- MVP
+{ usuarios, pagamento, produtos }
+
+
+2- DESESTRUCTURING MVP
+const { login, registro, alterar senha, esqueci senha, alterar endereço, alterar cadastro } = usuarios
+
+const { addP, removeP, editP, AssignProductToCategory, RemoveProductFromCategory, addC, removeC, editC, feedbackDoP  } = produtos
+
+const { andamentoDoProduto, previsaoDeChegada } = logistica
+
+const { gerar pix, gerar boleto, pag por cartao de credito, reembolso, cancelamento } = pagamento 
+
+
+3- TASKS
+
+	1.0 decidir ferramenta agile (azure, gitlab ??ou oque )
+	1.1 escrever o notion (tudo que é citado acima na seção notion)
+	1.2 estudar escalabilidade horizontal e vertical
+	1.3 suportabilidade do banco de dados / capacidade dele 
+	1.4 aonde o projeto ficara hospedado, qual sera a capacidade da aplicação, o core, o cluster, quanto a app vai aguentar, aonde ele vai rodar 
+	1.5 vc sabe oque é.kkkkkk (f), estilo vai ser em branco, textos vao ser suposições ex: Seu Logo - Sua Empresa (em vez de botar o nome de uma empresa, colocar isso tipo)
+	1.6 estruturar banco de dados
+	1.7 escrever umas sprints na ferramenta agile selecionada
+	1.7 decidir e afirmar a política de produtividade do whitelabel(projeto), escrever no notion tudo certinho
+	1.8 achar gente pra participar ( postar no linkedin, no discord, td mais )
+
+	
+
+   _usuarios:
+	1.0 registro {campos: cpf, rua, bairro... senha, confirmSenha, email, confirmEmail}
+	1.1 login { inserir senha e email }
+	1.2 esqueci senha { alterar senha durante a página de login }
+	
+	2.0 alterar cadastro { alterar senha, alterar email }
+	2.0 alterar endereço { alterar: cpf, rua, bairro, cidade, cep.... }
+	
+   _produtos:
+	
+	1.0 add produto { nome, preço, createdAt, id ... etc }
+	1.1 remove produto
+	1.2 edit produto { ...tudo }
+
+	2.0 add categoria { é um objecto q contem um array com os produtos }
+	2.1 remove categoria
+	2.2 edit categoria		
+	
+	3.1 atribuir produto a categoria
+	3.2 remover produto da categoria
+
+   _pagamento:
+
+	1.0 gerar pix
+	1.1 gerar boleto
+	
+	2.0 form para cartao de credito, inserir dados, validar
+	2.0 gerar pagamento pelo cartao de credito
+
+	3.0 reembolso dentre 7 dias de garantia (direito do consumidor)
+	3.1 cancelamento antes da chegada do produto
+ 
+
+   _constituição
+	
+	1.0 politica de privacidade
+	1.1 sobre nós (loja)
+	1.2 fale conosco	
+	1.3 formas de pagamento
+	1.4 prazos para entrega
+	1.5 politica de troca e devolução

@@ -1,0 +1,50 @@
+ HTML E CSS: 
+
+Clonar o design de um site
+Landing page responsiva (mobile first e grid layout)
+Teclado virtual responsivo (grid layout e dom) 
+100% Perfect Project
+
+
+JAVASCRIPT:
+
+Countries Project (Antes aprender sobre SEO e boas práticas)
+Portfólio com um estilo de VIKINGS e com EFEITOS SONOROS e animações, ao entrar no site e etc.
+
+Sistema de Reservas -- PRÓXIMO
+Crie um sistema de reservas para um restaurante, hotel ou outro tipo de negócio. Permita que os usuários façam reservas, vejam reservas existentes, cancelem e editem detalhes das reservas.
+
+
+Flappy Bird
+Hero Zero 
+Relógio Digital 
+Cronômetro (Iniciar, pausar, reiniciar)
+Lista de tarefas (Adicionar, editar, marcar, remover)   --- FAZENDO
+Landing page pra Jovana ( MANICURE / PEDICURE / MASSOTERAPEUTA )
+Eccomerce, loja online (Produtos, carrinho de compras[CRUD], ETC)
+Aplicativos de hábitos, rotina e contagem de dias sucessivos, incluido alarmes, datas, observações, gatilhos, etc. Juntamente com uma sessão que tenha: Bom sono, Exercício Físico, Alimentação saúdavel, aonde a pessoa de uma nota de 0 a 10 para cada um dos tópicos, e essa nota será uma média feita conforme os dias que aparece no painel pro usuário.
+Sistema interno para gerenciamento de entrada e saída de dinheiro para uma loja(sapataria)
+
+Site de um time do brasileirão, contando a história e o desenvolvimento do time, conectado a alguma api para mostrar a classificação do brasileirão, e talvez próximos jogos do time, ou do brasileirão em si. 
+
+
+REACT E NODE:
+
+Eccomerce para Daiane Azevedo, loja Folha Rainha (Produtos, carrinho de compras[CRUD], ETC)
+Plataforma de Apostas como se fosse um blaze (Se chamaria ROLL, e seria com dinheiro falso) {ótimo para treinar JS}
+Plataforma de Restaurantes
+Site para ABAPA (Com um painel de administrador, que permite adicionar, editar, e remover publicações, que contém, nome, raça, idade, fotos do cachorro.. etc, E o site pro cliente que deseja adotar os dogs)
+UM SITE QUE CONTENHA TODOS AS MINHAS ANOTAÇÕES DE ESTUDOS DISPONÍVEIS PARA QUEM QUISER LER, AONDE TAMBÉM TENHA UMA INTERFACE QUE CONTENHA UMA ESPÉCIE DE TO DO LIST DAS TAREFAS DIARIAS QUE A PESSOA PODE MONTAR A SUA PRÓPRIA E UM CONTADOR DE SEQUÊNCIA, PARA MARCAR OS DIAS SEGUIDOS EM DISCIPLINA ESTUDANDO. (como tem no duolingo, a ofensiva)
+
+ { CONCLUIDOS:
+
+Landing Page + Formulário de Pesquisa ✔️
+Pedra papel e tesoura (Player vs CPU) ✔️
+Jogo da Velha (Player vs Player) ✔
+Calculadora ✔️
+Jogo do Genius ✔
+
+Faz um widget de temperatura, conectado a uma API com JS ✔️
+Fazer um site que busca CEPS da cidade, conectado a uma API com JS ✔️ 
+
+}

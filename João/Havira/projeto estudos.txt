@@ -1,0 +1,29 @@
+desenhar em caderno o app ( layout )
+
+basicamente refazer projeto técnico de teste da hávira
+
+porém com outras tecnologias e mais funcionalidades
+
+foco em aprender a utilizar conceitos e bibliotecas novas
+
+funcionalidades:
+adicionar usuario
+remover usuario
+filtar usuarios
+
+buscar usuario ( mover com flyto ) e ai abre card com infos dos usuarios
+
+criar api fake pelo next mesmo
+posso ate usar a mesma api do teste que vinha os usuarios
+
+stack:
+
+tailwind + chacka ui + shadcn
+react e zustand
+tanstack
+map libre
+next
+geojson?
+
+
+

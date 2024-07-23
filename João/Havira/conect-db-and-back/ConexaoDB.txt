@@ -1,0 +1,7 @@
+1- Subindo o docker eu consigo rodar o DATABASE
+
+Pode ocorrer ocasionalmente uma troca na porta, ai preciso subir no docker novamente na nova porta
+vejo a porta em Docker > docker-compose.wml
+
+2 - Pra rodar o BackEnd
+Dentro da pasta src > oneMap.AppHost > rodar comando: dotnet run

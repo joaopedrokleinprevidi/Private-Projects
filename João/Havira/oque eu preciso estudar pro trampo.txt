@@ -1,0 +1,42 @@
+React -
+TypeScript -
+Tailwind -
+Chackra UI -
+NextJS -
+KY -
+Zustand -
+
+azemute conceito
+
+
+
+Metodologia:
+
+Duas horas para cada um dos conceitos.
+Equilibrar entre teoria e prática. Buscar entender oque acontece por debaixo dos panos.
+
+
+Tempos específicos:
+
+React 1 hora: Tenho boa prática, só fixar alguns conceitos teóricos e deixá-los nítidos.
+
+
+Ordem dia 24/06:
+
+1 - React -- 01:25h
+2 - TypeScript -- 02h
+3 - Redux Saga -- 01:25h
+4 - NextJS 
+5 - Axios
+6 - Git
+6 - Tailwind
+7 - Chackra UI
+
+
+
+
+Anotações importantes / Checkpoints :
+
+
+- React: Entender server-components.
+- TypeScript: Estudar bem Types e Interfaces e suas maiores diferenças, fazer varios exemplos de use cases 

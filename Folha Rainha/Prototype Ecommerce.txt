@@ -1,0 +1,59 @@
+STEP BY STEP FOR BUILD ECCOMERCE:
+
+
+-1: Criar estruturação de arquivos e inicialização do servidor. 
+
+0: Criar conexão com o Firebase Cloud Firestore e ao Firebase Authentication
+
+Proteção:
+
+Proteger o arquivo FirebaseConfig e o arquivo SDK de chave de conta de acesso. Pois eles possuem dados sensíveis. 
+Usar váriaveis de ambiente criadas no backend, e fazer uma requisição ao back end para pegar o objeto firebaseconfig que está no backend protegido pelas variaveis de ambiente.
+usar o firebaseConfig para configurar o firebase authentication no front end, para poder fazer login e etc. 
+IMPORTANTE!!!!
+
+1- Fazer um getAll ao Firestore   OK
+2- Fazer um login(post) com Firebase Authentication eviando dados ao Cloud Firestore(DATABASE)    OK
+3- Fazer um registro(post) com Firebase Authentication eviando dados ao Cloud Firestore(DATABASE)  OK
+
+4- Implementar Variáveis de ambiente    ok
+
+--- POINT ---
+... OBS: Até aqui, o usuário deve poder fazer o cadastro, tendo seus dados sensíveis protegidos criptografados no banco de dados.
+... E também o usuário deve poder fazer login, verificando se o email existe e se a senha é a mesma cadastrada. Se true, ele loga, se false, ele não loga. 
+... Todos os arquivos que contém dados sensíveis devem estar sendo protegidos por variáveis de ambiente no back-end.
+... Então até o momento temos a proteção de Login do Firebase e a nossa própria também criptografada.
+--- POINT ---
+
+
+Criar middlewares, tanto no front end, para o firebase authentication, para verificar erros como: (auth/invalid-credential), (auth/too-many-requests), etc... 
+ (auth/invalid-credential) == credenciais invalidas
+ (auth/too-many-requests) == 5 tentativas de login invalidas
+explorar e entender outros possíveis erros... para fazer suas validações corretas... 
+Além disso os MIDDLEWARES também servem para verificar quem pode ou não ter acesso a rota.
+Middlewares == meio 
+O CÓDIGO DEVE SER CONFIGURADO POR ALGUMA LIB COMO O GULP. PARA QUE TODO CÓDIGO DO FRONT END SEJA MINIFICADO E OBFUSCADO. DIFICULTANDO A LEITURA PARA USUÁRIOS MAL INTENCIONADOS. ver como fazer isso de maneira profissional, pois hackers experientes ainda podem achar um jeito de contornar isto. 
+
+Então agora preciso integrar token JWT quando o usuario loga para autenticar e fazer verificações nas rotas
+https://www.youtube.com/watch?v=rGYB7OCLAVw&ab_channel=ThiCode
+
+Quanto no backend, para a criação de usuarios, verificar inputs... etc 
+Pesquisar também sobre Sanitize Fields, para entender melhor quando sera sua implementação...
+Ver mais ou menos como funciona a história de tokens que expiram, se é preciso fazer quando o usuário loga ou oque ... Como o firebase Trabalha com isso.. Se eu uso os tokens dele, ou devo criar os meus próprios ... Como fazer a backlist e renovação automatica de tokens ...
+Pelo que entendi acho que o próprio Firebase Authentication tem esse sistema de tokens que expiram e dão refresh automaticamente... Ver sobre 
+
+
+6- Implementar Guard do Firebase Authentication.
+7- Implementar Custom Claims do Firebase Authentication. 
+
+Gerenciar no backend os cargos e fazer verificações. Permitindo ou não acesso as rotas conforme o cargo. 
+
+
+
+erro atual:
+estou tentando passar o firebaseconfig para o frontend
+
+criei um objeto firebaseconfig, passei variaveis de ambiente para ele e estou tentando passa-lo atraves de uma rota config
+porem tem algum erro nestes passos que esta sendo enviado um objeto {} vazio
+
+depois disso tenho que conferir na parte do frontend ver se esta tudo certo 

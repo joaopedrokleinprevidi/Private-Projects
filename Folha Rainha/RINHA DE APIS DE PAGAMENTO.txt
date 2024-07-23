@@ -1,0 +1,67 @@
+----- STRIPE
+
+- Fácil integração
+- Ótima documentação.
+
+
+----- API EFI :
+
+- Ótima documentação.
+- Curso gratuito oficial.
+- Comunidade no Discord.
+
+--Tarifas:
+
+- Boleto, Bolix e folha de carnê pago
+Recebimento: R$3,45
+Emissão, baixa, cancelamento e boletos não pagos: GRÁTIS
+Boletos registrados automaticamente: GRÁTIS
+Personalização da cobrança: GRÁTIS
+Compensação e disponibilização de saldo: 1 dia útil
+
+- Venda no cartão de crédito
+Recebimento: 4,99% + 0,29R$
+Emissão, cancelamento e cobranças não pagas: GRÁTIS
+Compensação e disponibilização de saldo: de 2 a 21 dias úteis*
+Personalização da cobrança: GRÁTIS
+
+- Pix | Vender e Receber
+
+Pix pelo aplicativo (30 Pix GRÁTIS por mês*)
+Receber por chave, QR Code estático e dados bancários: 1,19%
+
+Pix pela API
+Receber por QR Code dinâmico: 1,19%
+
+Pix Cobrança
+Receber por cobrança com QR Code dinâmico ou Pix Copia e Cola - Pix Cob e Pix CobV via API: 1,19%
+
+
+
+----- Pic Pay
+
+--Tarifas
+
+Mensalidade: Taxa zero
+
+Custo de setup: Taxa zero
+
+Taxa de saque: Taxa zero
+
+Taxa de cancelamento: Taxa zero
+
+Tarifa por transação: Taxa zero
+
+Antifraude: Grátis
+
+
+Prazos de recebimento
+
+1 dia: 5,19%
+
+14 dias: 4,61%
+
+30 dias: 3,89%
+
+
+--
