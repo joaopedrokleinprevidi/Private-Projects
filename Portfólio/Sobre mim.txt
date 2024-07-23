@@ -1,0 +1,73 @@
+Início - 
+
+João Pedro Klein Previdi
+Desenvolvedor Full Stack
+
+Apaixonado por tecnologia, um autodidata curioso. Ama oque faz, e se dedica fielmente a cada processo realizado.
+
+{ icone whatsapp }
+{ icone linkedin }
+{ icone github }
+
+{ button BAIXAR CV }
+
+{ imagem }
+
+
+
+
+======================
+
+Sobre mim - 
+
+{ imagem }
+
+Focado a 1 ano e meio na carreira, estudando e desenvolvendo projetos diariamente, sempre buscando ser melhor que ontem. 
+Ama a natureza, explorar e viver. Autodidata nato, com ótimas capacidades para resolução de problemas complexos e com uma comunicação direta e precisa.
+
+Uma pessoa curiosa e com grandes sonhos, apaixonado por evolução e desenvolvimento, seja no quesito profissional, mental ou físico. Fascinado por assuntos e estudos que estimulem a melhora contínua nesses aspectos. Sejam eles, filosofia, neurociência ou espiritualidade.
+
+{ stack abaixo, images / icons }
+ SCSS,   SOLID, CLEAN CODE,  KANBAN, GIT FLOW
+
+OK - HTML, CSS, JAVASCRIPT SASS,  LESS, REACT, TYPESCRIPT, NODE, express, FIREBASE, git, mySQL, figma, STYLED-COMPONENTS,
+======================
+
+Projetos - 
+
+{ img, versão desktop, tablet e mobile } - descrição do project -  {icon github} botão ver código - {icon redirect(seta)}botão ver site - { stack usada }
+
+
+{ maximum images } - O projeto Maximum está sendo desenvolvido em equipe. O escopo do projeto conta com uma lista de tarefas, um calendário, um painel de rotina e entre outras funcionalidades. Criado com um padrão MVP, trabalhando com implementações, utilizando boas práticas de escalabilidade como Solid e Clean Code. Atualmente no MVP inicial, possuímos a Lista de Tarefas, que está sendo finalizada neste momento.
+
+{ myEarth images } - O projeto MyEarth foi desenvolvido para um teste técnico, aonde o escopo do projeto se concentrava em dominar uma biblioteca rapidamente, que seria a Leaflet. Consultar e consumir dados recebidos de uma API de usuários, podendo inserir novos usuários e assim alocando-os em sua respectiva posição no mapa, a partir de sua latitude e longitude.
+
+
+====================
+exemplo dessa parte de contatos: https://prnt.sc/ttFBeeaM37xz
+
+
+Contatos -
+
+Em busca de um engenheiro full stack que não só desenvolva código, mas também promova melhores práticas e qualidade no processo de desenvolvimento? Estou aqui para elevar o padrão do seu software.
+
+{ painel com contatos , tipo 
+
+social + botão }
+
+Whatsapp + {button Enviar Mensagem {icon de flecha}}
+Linkedin + {button Ver Linkedin {icon de seta}}
+Email + {button Enviar um email {icon de seta}}
+GitHub + {button Ver Projetos {icon de seta}}
+
+
+===================
+
+Footer
+
+© Portfólio 2024 - Criado com amor por João Pedro Klein Previdi 🚀
+
+
+
+
+

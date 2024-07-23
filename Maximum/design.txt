@@ -1,0 +1,35 @@
+-- pacote de icones:
+
+- apagar, concluido, lista: https://www.flaticon.com/br/packs/approved-and-rejected-7
+
+- tudo azul: https://www.flaticon.com/br/packs/notes-and-tasks-29?word=list
+
+-- paleta de cores:
+
+-Principais:
+Azul Marinho: #00B9FF
+Azul Vivo: #666AF6
+Amarelo Queimado: #f8ad2b
+Bege avermelhado: #e16a58
+
+dominant blue: #878AF5     more dominant: #666AF7
+
+supports
+dark blue: #31446C
+burnt yellow: #F5A921
+burnt orange: #F4863C 
+
+
+
+-- tipografia:
+
+Poppins-Thin
+OpenSans-Light
+
+Heading 1 | Bold, 26px
+Subheading 1 | Regular, 21px
+
+Heading 2 | SemiBold, 24px
+Heading 3 | Medium, 21px
+Subheading 3 | Medium, 16px
+Heading 4 | Medium, 18px
